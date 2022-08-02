@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+whois $1
+dig +noall +answer +multiline $1 any
+dig $1
