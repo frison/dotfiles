@@ -10,7 +10,9 @@ link:
 	ln -sf ${PWD}/exports ~/.exports                                               
 
 clio:
-	ln -sf ${PWD}/locals/clio/.gitconfig.local ~/.gitconfig.local
+	ln -sf ${PWD}/locals/clio/gitconfig.local ~/.gitconfig.local
+	ln -sf ${PWD}/locals/clio/zshrc.local ~/.zshrc.local
 
 home:
-	ln -sf ${PWD}/locals/personal/.gitconfig.local ~/.gitconfig.local
+	ln -sf ${PWD}/locals/personal/gitconfig.local ~/.gitconfig.local
+	ln -sf ${PWD}/locals/clio/zshrc.local ~/.zshrc.local

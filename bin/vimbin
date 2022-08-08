@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+BIN_TO_VIM=$(which $1)
+
+vim $BIN_TO_VIM
