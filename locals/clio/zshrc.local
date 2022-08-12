@@ -1,2 +1,4 @@
 
-eval "$(dev _hook)"
+if command -v dev > /dev/null 2>&1; then
+  eval "$(dev _hook)"
+fi
