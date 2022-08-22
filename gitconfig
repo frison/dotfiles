@@ -16,6 +16,7 @@
   co = checkout
   pf = push --force-with-lease
   st = status
+  sl = log --patch -G # Searching all of the git diffs for the given regex
 
 [core]
   excludesfile = ~/.gitignore
