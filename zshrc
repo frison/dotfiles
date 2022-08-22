@@ -105,5 +105,8 @@ plugins=(git)
 # Placing this below the local config allows it to override any settings
 source $ZSH/oh-my-zsh.sh
 
+# Local config
+[[ -f ~/.zshrc.local.prompt ]] && source ~/.zshrc.local.prompt
+
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
