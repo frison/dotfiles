@@ -110,3 +110,6 @@ source $ZSH/oh-my-zsh.sh
 
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
+
+# Add user's bin if exists
+[[ -d ~/bin ]] && export PATH="$PATH:~/bin"
