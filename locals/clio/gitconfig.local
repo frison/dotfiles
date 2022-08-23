@@ -1,3 +1,6 @@
 [user]
     email = tim.frison@clio.com
     name = Tim Frison
+
+[core]
+    editor = vim

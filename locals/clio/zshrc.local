@@ -1,4 +1,7 @@
-
 if command -v dev > /dev/null 2>&1; then
   eval "$(dev _hook)"
+fi
+
+if command -v kubectl > /dev/null 2>&1; then
+  plugins=($plugins kubectl kube-ps1)
 fi

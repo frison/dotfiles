@@ -12,6 +12,7 @@ link:
 clio:
 	ln -sf ${PWD}/locals/clio/gitconfig.local ~/.gitconfig.local
 	ln -sf ${PWD}/locals/clio/zshrc.local ~/.zshrc.local
+	ln -sf ${PWD}/locals/clio/zshrc.local.prompt ~/.zshrc.local.prompt
 
 home:
 	ln -sf ${PWD}/locals/personal/gitconfig.local ~/.gitconfig.local

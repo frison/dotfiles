@@ -73,8 +73,6 @@ HIST_STAMPS="yyyy-mm-dd"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
-source $ZSH/oh-my-zsh.sh
-
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -104,5 +102,14 @@ source $ZSH/oh-my-zsh.sh
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
+# Placing this below the local config allows it to override any settings
+source $ZSH/oh-my-zsh.sh
+
+# Local config
+[[ -f ~/.zshrc.local.prompt ]] && source ~/.zshrc.local.prompt
+
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
+
+# Add user's bin if exists
+[[ -d ~/bin ]] && export PATH="$PATH:~/bin"
