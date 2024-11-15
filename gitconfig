@@ -4,6 +4,7 @@
 
 [push]
   default = current
+  
 
 [color]
   ui = auto
@@ -15,8 +16,13 @@
   ci = commit -v
   co = checkout
   pf = push --force-with-lease
+  pushf = push --force-with-lease
   st = status
   sl = log --patch -G # Searching all of the git diffs for the given regex
+  slr = log --patch --reverse -G # Searching all of the git diffs for the given regex
+  pusho = push --set-upstream origin HEAD
+  logg = log --graph --reflog
+
 
 [core]
   excludesfile = ~/.gitignore
